@@ -1,0 +1,25 @@
+{
+  "name": "NETSCREEN BITCH",
+  "version": "1.0",
+  "description": "Checking this shit out",
+  "permissions": ["desktopCapture"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+  {
+    "matches": ["http://10.106.130.22/*"],
+    "js": ["content-script.js"]
+  }
+  ],
+  "browser_action": {
+    "default_icon": "images/just_tv32.png"
+  },
+	"icons": {
+	  "16": "images/just_tv16.png",
+	  "32": "images/just_tv32.png",
+	  "48": "images/just_tv48.png",
+	  "128": "images/just_tv128.png"
+	},
+    "manifest_version": 2
+}
