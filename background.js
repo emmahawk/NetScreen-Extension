@@ -21,7 +21,7 @@
 
 console.log("background : we are at the top");
 
-var data_sources = ['screen', 'window'],
+var data_sources = ['screen', 'window', 'audio'],
     desktopMediaRequestId = '';
 
 chrome.runtime.onConnect.addListener(function(port) {

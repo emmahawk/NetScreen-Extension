@@ -1,7 +1,7 @@
 {
-  "name": "NETSCREEN BITCH",
+  "name": "NETSCREEN",
   "version": "1.0",
-  "description": "Checking this shit out",
+  "description": "Extension for accessing DesktopCapture",
   "permissions": ["desktopCapture"],
   "background": {
     "scripts": ["background.js"]
