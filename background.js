@@ -27,6 +27,9 @@ var data_sources = ['screen', 'window'],
 chrome.runtime.onConnect.addListener(function(port) {
 	console.log("ext background : hi friend");
   port.onMessage.addListener(function (msg) {
+    console.log('message from NetScreen');
+    console.log(msg);
+
     if(msg.type === 'SS_UI_REQUEST') {
       requestScreenSharing(port, msg);
     }
